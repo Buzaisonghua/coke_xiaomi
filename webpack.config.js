@@ -28,6 +28,10 @@ module.exports = {
                     name: './img/[name].[hash:7].[ext]',
                 }
             },
+            {
+                test: /\.css$/,
+                loader: ['style-loader', 'css-loader']
+            }
         ]
     },
     devServer:{
